@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    *background-color: #131313;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: margin-left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dash{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+nav{
+    width: 25%;
+    height: 100vh;
+    background-color: #131313;
+    overflow: hidden;
+    position: fixed;
+    left: -320px;
+    transition: left 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav .nav-user {
+    text-align: center;
+    padding: 1.5em;
+}
+
+nav .nav-user img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+nav .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-items ul{
+    width: 280px;
+}
+
+nav .nav-items ul a{
+    display: block;
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    margin-top:1rem ;
+    color: #37373a;
+    box-shadow: 4px 4px 30px rgb(0 0 0 /0.5);
+    font-weight: 900;
+    transition: background-color 300ms ease-in-out;
+}
+
+nav .nav-items ul a i{
+    margin-right: 0.7rem;
+}
+
+.dash-options{
+    width: 100%;
+}
+
+.nav-icons{
+    background-color: #131313;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline-end: 1rem;
+}
+
+.nav-icons .icons i{
+    color: #fff;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.tabs-section{
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: none;
+}
+
+/* estilos de body y nav */
+
+
+.activo{
+    display: block;
+    background-color: #fff;
+}
+
+.body-side{
+    margin-left: 320px;
+}
+
+.nav-activo{
+    left: 0;
+}
+
